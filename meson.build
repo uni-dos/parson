@@ -27,7 +27,7 @@ parson = declare_dependency(
 
 pkgconfig = import('pkgconfig')
 
-# will create a pkg config for the shared lib only
+# will create a pkg config
 pkgconfig.generate(parson_lib,
     version: meson.project_version(),
     filebase: meson.project_name(),
